@@ -31,6 +31,7 @@ const App = props => {
         <Header/>
         <Switch>
           <Route path="/" exact component={Home}/>
+          <Route path="/lexoj.al" exact component={Home}/>
           <Route path="/shfleto" exact component={BrowseBooks}/>
           <Route path="/book/:title" exact component={BookPage}/>
           <Route path ="/hyr" exact component={SignIn}/>

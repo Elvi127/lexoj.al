@@ -71,3 +71,25 @@
     background-color: white;
     color: black;
 }
+@media screen and (max-width: 800px) {
+    .book-info{
+        flex-direction: column;
+    }
+    .book-cover{
+        width: 100%;
+    }
+    .book-details{
+        width: 100%;
+    }
+    .book-details div .book-detail{
+        grid-template-columns: 1fr 2fr;
+    }
+}
+@media screen and (max-width: 600px) {
+    .book-cover p{
+        width: 80%;
+    }
+    .book-cover img{
+        width: 80%;
+    }
+}
