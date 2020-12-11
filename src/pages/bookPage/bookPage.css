@@ -1,0 +1,73 @@
+.book-screen{
+    background-color: #0F1111;
+    padding-top: 70px;
+}
+.book-info{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.book-cover{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.book-cover img{
+    width: 50%;
+    height: auto;
+}
+.book-details{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.book-title{
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 30px;
+}
+.book-details div .book-detail{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+.book-details div span{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.book-description{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(201, 201, 201);
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.book-cover p{
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    padding: 5px 0;
+    align-items: center;
+    cursor: pointer;
+}
+.book-cover p:hover{
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,16 @@
+.pagination{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.pagination p{
+    color: white;
+    margin: 0 20px;
+    font-size: 20px;
+}
+.arrow{
+    cursor: pointer;
+    padding-top: 5px;
+}
