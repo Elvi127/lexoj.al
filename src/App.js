@@ -29,16 +29,17 @@ const App = props => {
 
   return(
     <Provider store={store}>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Header/>
         <CartIcon/>
         <Switch>
+          <Route path="/" exact component={Home}/>
           <Route path="/lexoj.al" exact component={Home}/>
-          <Route path="/lexoj.al/shfleto" exact component={BrowseBooks}/>
-          <Route path="/lexoj.al/book/:title" exact component={BookPage}/>
-          <Route path ="/lexoj.al/hyr" exact component={SignIn}/>
-          <Route path ="/lexoj.al/regjistrohu" exact component={SignUp}/>
-          <Route path="/lexoj.al/shporte" exact component={Cart}/>
+          <Route path="/shfleto" exact component={BrowseBooks}/>
+          <Route path="/book/:title" exact component={BookPage}/>
+          <Route path ="/hyr" exact component={SignIn}/>
+          <Route path ="/regjistrohu" exact component={SignUp}/>
+          <Route path="/shporte" exact component={Cart}/>
         </Switch>
       </Router>
     </Provider>

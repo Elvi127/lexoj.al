@@ -8,7 +8,7 @@ const CartIcon = props => {
     if(location.pathname.includes('hyr') || location.pathname.includes('regjistrohu') || location.pathname.includes("shporte"))
      return null;
     else return(
-        <Link to='/lexoj.al/shporte' style={{ textDecoration: 'none' }}>
+        <Link to='/shporte' style={{ textDecoration: 'none' }}>
             <div className="cartIconContainer">
                 <ion-icon name="cart-outline"></ion-icon>
             </div>
