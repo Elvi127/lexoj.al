@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lexoj.al/static/css/main.adbba995.chunk.css",
+    "main.css": "/lexoj.al/static/css/main.5d657e45.chunk.css",
     "main.js": "/lexoj.al/static/js/main.5675a715.chunk.js",
     "main.js.map": "/lexoj.al/static/js/main.5675a715.chunk.js.map",
     "runtime-main.js": "/lexoj.al/static/js/runtime-main.9d04407a.js",
@@ -8,9 +8,9 @@
     "static/js/2.3a6f3049.chunk.js": "/lexoj.al/static/js/2.3a6f3049.chunk.js",
     "static/js/2.3a6f3049.chunk.js.map": "/lexoj.al/static/js/2.3a6f3049.chunk.js.map",
     "index.html": "/lexoj.al/index.html",
-    "precache-manifest.945a5600c78724476486327fe02bb63b.js": "/lexoj.al/precache-manifest.945a5600c78724476486327fe02bb63b.js",
+    "precache-manifest.725f809bf524b9a91080d766cdcc7312.js": "/lexoj.al/precache-manifest.725f809bf524b9a91080d766cdcc7312.js",
     "service-worker.js": "/lexoj.al/service-worker.js",
-    "static/css/main.adbba995.chunk.css.map": "/lexoj.al/static/css/main.adbba995.chunk.css.map",
+    "static/css/main.5d657e45.chunk.css.map": "/lexoj.al/static/css/main.5d657e45.chunk.css.map",
     "static/js/2.3a6f3049.chunk.js.LICENSE.txt": "/lexoj.al/static/js/2.3a6f3049.chunk.js.LICENSE.txt",
     "static/media/home.css": "/lexoj.al/static/media/background.daff393e.jpg",
     "static/media/baner.png": "/lexoj.al/static/media/baner.e2e08f80.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.9d04407a.js",
     "static/js/2.3a6f3049.chunk.js",
-    "static/css/main.adbba995.chunk.css",
+    "static/css/main.5d657e45.chunk.css",
     "static/js/main.5675a715.chunk.js"
   ]
 }
