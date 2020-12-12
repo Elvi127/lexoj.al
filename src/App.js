@@ -14,6 +14,7 @@ import BookPage from './pages/bookPage/bookPage';
 import SignIn from './pages/signIn/signIn';
 import SignUp from './pages/signup/signup';
 import Header from './components/header/header';
+import CartIcon from './components/cartIcon/cartIcon';
 import booksReducer from './store/reducer/books';
 
 const rootReducer = combineReducers({
@@ -29,6 +30,7 @@ const App = props => {
     <Provider store={store}>
       <Router>
         <Header/>
+        <CartIcon/>
         <Switch>
           <Route path="/" exact component={Home}/>
           <Route path="/lexoj.al" exact component={Home}/>
