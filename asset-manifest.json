@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/lexoj.al/static/css/main.adbba995.chunk.css",
-    "main.js": "/lexoj.al/static/js/main.13adbb10.chunk.js",
-    "main.js.map": "/lexoj.al/static/js/main.13adbb10.chunk.js.map",
+    "main.js": "/lexoj.al/static/js/main.dc0f6cb8.chunk.js",
+    "main.js.map": "/lexoj.al/static/js/main.dc0f6cb8.chunk.js.map",
     "runtime-main.js": "/lexoj.al/static/js/runtime-main.9d04407a.js",
     "runtime-main.js.map": "/lexoj.al/static/js/runtime-main.9d04407a.js.map",
     "static/js/2.bc350b58.chunk.js": "/lexoj.al/static/js/2.bc350b58.chunk.js",
     "static/js/2.bc350b58.chunk.js.map": "/lexoj.al/static/js/2.bc350b58.chunk.js.map",
     "index.html": "/lexoj.al/index.html",
-    "precache-manifest.52ad4c804beaa680c7e0266f1693e8b0.js": "/lexoj.al/precache-manifest.52ad4c804beaa680c7e0266f1693e8b0.js",
+    "precache-manifest.20efb923ddfde688eef9f6e84211518f.js": "/lexoj.al/precache-manifest.20efb923ddfde688eef9f6e84211518f.js",
     "service-worker.js": "/lexoj.al/service-worker.js",
     "static/css/main.adbba995.chunk.css.map": "/lexoj.al/static/css/main.adbba995.chunk.css.map",
     "static/js/2.bc350b58.chunk.js.LICENSE.txt": "/lexoj.al/static/js/2.bc350b58.chunk.js.LICENSE.txt",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.9d04407a.js",
     "static/js/2.bc350b58.chunk.js",
     "static/css/main.adbba995.chunk.css",
-    "static/js/main.13adbb10.chunk.js"
+    "static/js/main.dc0f6cb8.chunk.js"
   ]
 }
