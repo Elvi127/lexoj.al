@@ -1,7 +1,7 @@
 .cartIconContainer{
     position: fixed;
     z-index: 2;
-    top: 90px;
+    top: 80%;
     left: 90%;
     background-color: #ff5471;
     border-radius: 60px;
