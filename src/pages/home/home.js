@@ -12,7 +12,7 @@ const Home = props => {
         <div>
             <div className="home-banner">
                 <p className="banner-title">Lexo pa limit</p>
-                <Link to='/shfleto' style={{ textDecoration: 'none' }}>
+                <Link to='/lexoj.al/shfleto' style={{ textDecoration: 'none' }}>
                     <p className="banner-action">Shfleto librat</p>
                 </Link>
             </div>

@@ -1,16 +1,18 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom';
 
 import './cartIcon.css';
 
 const CartIcon = props => {
     const location = useLocation();
-    if(location.pathname.includes('hyr') || location.pathname.includes('regjistrohu'))
+    if(location.pathname.includes('hyr') || location.pathname.includes('regjistrohu') || location.pathname.includes("shporte"))
      return null;
     else return(
-        <div className="cartIconContainer">
-            <ion-icon name="cart-outline"></ion-icon>
-        </div>
+        <Link to='/lexoj.al/shporte' style={{ textDecoration: 'none' }}>
+            <div className="cartIconContainer">
+                <ion-icon name="cart-outline"></ion-icon>
+            </div>
+        </Link>
     )
 }
 

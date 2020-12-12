@@ -14,6 +14,7 @@
 }
 .cartIconContainer ion-icon{
     font-size: 40px;
+    color: black;
 }
 @media screen and (max-width: 600px){
     .cartIconContainer{

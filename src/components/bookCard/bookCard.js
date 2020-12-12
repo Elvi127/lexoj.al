@@ -3,7 +3,7 @@ import './bookCard.css';
 import {Link} from 'react-router-dom';
 
 const BookCard = props => {
-    let url = `/book/${props.title}`;
+    let url = `/lexoj.al/book/${props.title}`;
     return(
         <Link to={url} style={{ textDecoration: 'none' }}>
             <div className='book-card'>

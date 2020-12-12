@@ -16,6 +16,7 @@ import SignUp from './pages/signup/signup';
 import Header from './components/header/header';
 import CartIcon from './components/cartIcon/cartIcon';
 import booksReducer from './store/reducer/books';
+import Cart from './pages/cart/cart';
 
 const rootReducer = combineReducers({
   books: booksReducer
@@ -32,12 +33,12 @@ const App = props => {
         <Header/>
         <CartIcon/>
         <Switch>
-          <Route path="/" exact component={Home}/>
           <Route path="/lexoj.al" exact component={Home}/>
-          <Route path="/shfleto" exact component={BrowseBooks}/>
-          <Route path="/book/:title" exact component={BookPage}/>
-          <Route path ="/hyr" exact component={SignIn}/>
-          <Route path ="/regjistrohu" exact component={SignUp}/>
+          <Route path="/lexoj.al/shfleto" exact component={BrowseBooks}/>
+          <Route path="/lexoj.al/book/:title" exact component={BookPage}/>
+          <Route path ="/lexoj.al/hyr" exact component={SignIn}/>
+          <Route path ="/lexoj.al/regjistrohu" exact component={SignUp}/>
+          <Route path="/lexoj.al/shporte" exact component={Cart}/>
         </Switch>
       </Router>
     </Provider>
