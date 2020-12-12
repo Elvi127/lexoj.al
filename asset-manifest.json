@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/lexoj.al/static/css/main.4c2c3728.chunk.css",
-    "main.js": "/lexoj.al/static/js/main.fcfb5480.chunk.js",
-    "main.js.map": "/lexoj.al/static/js/main.fcfb5480.chunk.js.map",
+    "main.css": "/lexoj.al/static/css/main.9db7a491.chunk.css",
+    "main.js": "/lexoj.al/static/js/main.7f5c692a.chunk.js",
+    "main.js.map": "/lexoj.al/static/js/main.7f5c692a.chunk.js.map",
     "runtime-main.js": "/lexoj.al/static/js/runtime-main.9d04407a.js",
     "runtime-main.js.map": "/lexoj.al/static/js/runtime-main.9d04407a.js.map",
-    "static/js/2.f2941d34.chunk.js": "/lexoj.al/static/js/2.f2941d34.chunk.js",
-    "static/js/2.f2941d34.chunk.js.map": "/lexoj.al/static/js/2.f2941d34.chunk.js.map",
+    "static/js/2.bc350b58.chunk.js": "/lexoj.al/static/js/2.bc350b58.chunk.js",
+    "static/js/2.bc350b58.chunk.js.map": "/lexoj.al/static/js/2.bc350b58.chunk.js.map",
     "index.html": "/lexoj.al/index.html",
-    "precache-manifest.850cf40c6176caa8bcc2995fe548a6ad.js": "/lexoj.al/precache-manifest.850cf40c6176caa8bcc2995fe548a6ad.js",
+    "precache-manifest.10c60071f5a39ce85eb82ff15d89347e.js": "/lexoj.al/precache-manifest.10c60071f5a39ce85eb82ff15d89347e.js",
     "service-worker.js": "/lexoj.al/service-worker.js",
-    "static/css/main.4c2c3728.chunk.css.map": "/lexoj.al/static/css/main.4c2c3728.chunk.css.map",
-    "static/js/2.f2941d34.chunk.js.LICENSE.txt": "/lexoj.al/static/js/2.f2941d34.chunk.js.LICENSE.txt",
+    "static/css/main.9db7a491.chunk.css.map": "/lexoj.al/static/css/main.9db7a491.chunk.css.map",
+    "static/js/2.bc350b58.chunk.js.LICENSE.txt": "/lexoj.al/static/js/2.bc350b58.chunk.js.LICENSE.txt",
     "static/media/home.css": "/lexoj.al/static/media/background.daff393e.jpg",
     "static/media/baner.png": "/lexoj.al/static/media/baner.e2e08f80.png",
     "static/media/lexojlogo.png": "/lexoj.al/static/media/lexojlogo.5052d102.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9d04407a.js",
-    "static/js/2.f2941d34.chunk.js",
-    "static/css/main.4c2c3728.chunk.css",
-    "static/js/main.fcfb5480.chunk.js"
+    "static/js/2.bc350b58.chunk.js",
+    "static/css/main.9db7a491.chunk.css",
+    "static/js/main.7f5c692a.chunk.js"
   ]
 }
