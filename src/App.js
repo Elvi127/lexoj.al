@@ -16,10 +16,12 @@ import SignUp from './pages/signup/signup';
 import Header from './components/header/header';
 import CartIcon from './components/cartIcon/cartIcon';
 import booksReducer from './store/reducer/books';
+import cartReducer from './store/reducer/cart';
 import Cart from './pages/cart/cart';
 
 const rootReducer = combineReducers({
-  books: booksReducer
+  books: booksReducer,
+  cartItems: cartReducer
 })
 
 const store = createStore(rootReducer);

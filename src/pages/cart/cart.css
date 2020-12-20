@@ -1,0 +1,116 @@
+.cartPage{
+    background-color: #0F1111;
+    padding: 70px 10px 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cartItems{
+    width: 70%;
+}
+.cartItemCard{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+}
+.cartItemInfo{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 80%;
+}
+.cartItemInfo img{
+    width: 200px;
+    height: auto;
+}
+.cartItemInfo div{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    color: white;
+}
+.cartItemQuantity{
+    font-size: 20px;
+}
+.cartItemDelete{
+    padding-top: 20px;
+}
+.cartItemDelete ion-icon{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.cartItemInfo span{
+    cursor: pointer;
+}
+.subAction{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.addAction{
+    margin-left: 10px;
+}
+.checkoutContainer{
+    width: 25%;
+    display: block;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.checkoutAmount{
+    font-size: 20px;
+    width: 90%;
+}
+.checkoutAction{
+    width: 70%;
+    text-align: center;
+    border: 1px solid white;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 70px;
+}
+.checkoutAction:hover{
+    background-color: white;
+    color: #0F1111;
+}
+@media screen and (max-width: 800px){
+    .cartPage{
+        flex-direction: column;
+        align-items: center;
+    }
+    .checkoutContainer{
+        width: 70%;
+    }
+    .cartItems{
+        width: 90%;
+    }
+    .cartItemInfo{
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cartItemInfo div{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px){
+    .cartItemDelete{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
