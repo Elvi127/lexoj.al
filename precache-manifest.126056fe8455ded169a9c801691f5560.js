@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "52b039a80a829710a85c8a91fbe554d6",
+    "revision": "6b048bb4f595192f90a159239a8fe253",
     "url": "/lexoj.al/index.html"
   },
   {
-    "revision": "5feeabd9324ed9951695",
-    "url": "/lexoj.al/static/css/main.2a5642a7.chunk.css"
+    "revision": "0f5f024adfe0a8cb9033",
+    "url": "/lexoj.al/static/css/main.932533b6.chunk.css"
   },
   {
-    "revision": "8c0f6539c1ca25d4225a",
-    "url": "/lexoj.al/static/js/2.8b35a202.chunk.js"
+    "revision": "9d9d8b066cf780e6a891",
+    "url": "/lexoj.al/static/js/2.64c779fa.chunk.js"
   },
   {
     "revision": "9b318b6fb13190fe82c0677e9264b3c7",
-    "url": "/lexoj.al/static/js/2.8b35a202.chunk.js.LICENSE.txt"
+    "url": "/lexoj.al/static/js/2.64c779fa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5feeabd9324ed9951695",
-    "url": "/lexoj.al/static/js/main.10eef9e5.chunk.js"
+    "revision": "0f5f024adfe0a8cb9033",
+    "url": "/lexoj.al/static/js/main.94a28f94.chunk.js"
   },
   {
     "revision": "76d73fb6d14801676403",
