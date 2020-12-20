@@ -1,16 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useSelector} from 'react-redux';
 import {Link} from 'react-router-dom';
 import './home.css';
 import BookCard from '../../components/bookCard/bookCard';
 import Baner from './baner.png';
+import Menu from '../../components/menu/menu';
 
 const Home = props => {
+    const [isMenuOpen, setMenuOpen] = useState(false)
     const books = useSelector(state => state.books.books);
 
     return(
         <div>
             <div className="home-banner">
+                <div className="mobileMenu">
+                    <ion-icon onClick={()=>setMenuOpen(true)} name="grid"></ion-icon>
+                    <Menu closeMenu={()=>setMenuOpen(false)} visible={isMenuOpen} />
+                </div>
                 <p className="banner-title">Lexo pa limit</p>
                 <Link to='/shfleto' style={{ textDecoration: 'none' }}>
                     <p className="banner-action">Shfleto librat</p>

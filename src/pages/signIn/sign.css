@@ -69,4 +69,7 @@ input::placeholder{
     .sign-side{
         width: 100%;
     }
+    .sign-screen{
+        padding-top: 0;
+    }
 }

@@ -82,6 +82,14 @@
 .section2 .section-p{
     font-size: 28px;
 }
+.mobileMenu{
+    width: 80%;
+    text-align: left;
+    display: none;
+}
+.mobileMenu ion-icon{
+    font-size: 24px;
+}
 
 @media screen and (max-width: 1000px) {
     .books-container-home{
@@ -96,6 +104,11 @@
         margin-bottom: 20px;
     }
 }
+@media screen and (max-width: 800px){
+    .mobileMenu{
+        display: flex;
+    }
+}
 
 @media screen and (max-width: 600px) {
     .books-container-home{
@@ -103,5 +116,8 @@
     }
     .section2 img{
         min-width: 270px;
+    }
+    .home-banner{
+        justify-content: space-around;
     }
 }
