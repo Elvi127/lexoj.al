@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6b048bb4f595192f90a159239a8fe253",
+    "revision": "7066b4f341aff7db3ff950f4eeaff8fe",
     "url": "/lexoj.al/index.html"
   },
   {
-    "revision": "0f5f024adfe0a8cb9033",
-    "url": "/lexoj.al/static/css/main.932533b6.chunk.css"
+    "revision": "bc1f37bbde4167d56c4a",
+    "url": "/lexoj.al/static/css/main.0dd32d1e.chunk.css"
   },
   {
     "revision": "9d9d8b066cf780e6a891",
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lexoj.al/static/js/2.64c779fa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0f5f024adfe0a8cb9033",
-    "url": "/lexoj.al/static/js/main.94a28f94.chunk.js"
+    "revision": "bc1f37bbde4167d56c4a",
+    "url": "/lexoj.al/static/js/main.e8b77458.chunk.js"
   },
   {
     "revision": "76d73fb6d14801676403",
     "url": "/lexoj.al/static/js/runtime-main.9d04407a.js"
   },
   {
-    "revision": "daff393ef25c1086d4af733a310d874a",
-    "url": "/lexoj.al/static/media/background.daff393e.jpg"
+    "revision": "25c0e53936e039779b0bd0611e5f231c",
+    "url": "/lexoj.al/static/media/background.25c0e539.webp"
   },
   {
     "revision": "e2e08f80b4159a0fc56c9947e5a147bf",
