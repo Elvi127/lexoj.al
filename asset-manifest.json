@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/lexoj.al/static/css/main.e57ad830.chunk.css",
-    "main.js": "/lexoj.al/static/js/main.a3bd3662.chunk.js",
-    "main.js.map": "/lexoj.al/static/js/main.a3bd3662.chunk.js.map",
+    "main.css": "/lexoj.al/static/css/main.80f8d902.chunk.css",
+    "main.js": "/lexoj.al/static/js/main.5cd8aee2.chunk.js",
+    "main.js.map": "/lexoj.al/static/js/main.5cd8aee2.chunk.js.map",
     "runtime-main.js": "/lexoj.al/static/js/runtime-main.9d04407a.js",
     "runtime-main.js.map": "/lexoj.al/static/js/runtime-main.9d04407a.js.map",
     "static/js/2.eeac6e1d.chunk.js": "/lexoj.al/static/js/2.eeac6e1d.chunk.js",
     "static/js/2.eeac6e1d.chunk.js.map": "/lexoj.al/static/js/2.eeac6e1d.chunk.js.map",
     "index.html": "/lexoj.al/index.html",
-    "precache-manifest.7704e55abe8c1ff8c4059a01c5cf7b3e.js": "/lexoj.al/precache-manifest.7704e55abe8c1ff8c4059a01c5cf7b3e.js",
+    "precache-manifest.da738c5547dd0b89ed231f6e1c6480a4.js": "/lexoj.al/precache-manifest.da738c5547dd0b89ed231f6e1c6480a4.js",
     "service-worker.js": "/lexoj.al/service-worker.js",
-    "static/css/main.e57ad830.chunk.css.map": "/lexoj.al/static/css/main.e57ad830.chunk.css.map",
+    "static/css/main.80f8d902.chunk.css.map": "/lexoj.al/static/css/main.80f8d902.chunk.css.map",
     "static/js/2.eeac6e1d.chunk.js.LICENSE.txt": "/lexoj.al/static/js/2.eeac6e1d.chunk.js.LICENSE.txt",
     "static/media/home.css": "/lexoj.al/static/media/background.25c0e539.webp",
     "static/media/baner.png": "/lexoj.al/static/media/baner.e2e08f80.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.9d04407a.js",
     "static/js/2.eeac6e1d.chunk.js",
-    "static/css/main.e57ad830.chunk.css",
-    "static/js/main.a3bd3662.chunk.js"
+    "static/css/main.80f8d902.chunk.css",
+    "static/js/main.5cd8aee2.chunk.js"
   ]
 }
