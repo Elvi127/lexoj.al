@@ -18,6 +18,7 @@ import CartIcon from './components/cartIcon/cartIcon';
 import booksReducer from './store/reducer/books';
 import cartReducer from './store/reducer/cart';
 import Cart from './pages/cart/cart';
+import Profile from './pages/profile/profile';
 
 const rootReducer = combineReducers({
   books: booksReducer,
@@ -42,6 +43,7 @@ const App = props => {
           <Route path ="/hyr" exact component={SignIn}/>
           <Route path ="/regjistrohu" exact component={SignUp}/>
           <Route path="/shporte" exact component={Cart}/>
+          <Route path="/llogaria" exact component={Profile}/>
         </Switch>
       </Router>
     </Provider>

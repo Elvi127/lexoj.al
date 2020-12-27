@@ -11,10 +11,10 @@ const Menu = props => {
             {
                 logedUser
                 ?<div className="menuLogBar">
-                    <img src="https://i.pinimg.com/736x/5f/40/6a/5f406ab25e8942cbe0da6485afd26b71.jpg"/>
+                    <img alt="user" src="https://i.pinimg.com/736x/5f/40/6a/5f406ab25e8942cbe0da6485afd26b71.jpg"/>
                     <span>Elvi Miraka</span>
-                    <Link to="/hyr" className="links">
-                        <p>Shiko Profilin</p>
+                    <Link to="/llogaria" className="links">
+                        <p onClick={()=>setLogedUser(true)}>Shiko Profilin</p>
                     </Link>
                 </div>
                 :<div className="menuLogBar">
