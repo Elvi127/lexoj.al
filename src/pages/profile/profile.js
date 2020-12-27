@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './profile.css';
 import {useSelector} from 'react-redux';
 import BookCard from '../../components/bookCard/bookCard';
@@ -6,6 +6,11 @@ import BookCard from '../../components/bookCard/bookCard';
 
 const Profile = props => {
     const books = useSelector(state => state.books.books);
+    const [isEditAccountOpen, setEditAccountOpen] = useState(false);
+    const toggleEditAccount = () =>{
+        if(isEditAccountOpen) setEditAccountOpen(false)
+        else setEditAccountOpen(true)
+    }
     return(
         <div className="accountPage">
             <div className="accountLeft">
@@ -13,7 +18,22 @@ const Profile = props => {
                     <div className="userDetails">
                         <img alt="userimage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLCbQsmw9KpoBCi4Yabq8oau1Ksx3U8rmJBA&usqp=CAU"/>
                         <p>Elvi Miraka</p>
-                        <ion-icon name="ellipsis-vertical"></ion-icon>
+                        <div onClick={toggleEditAccount} className="userMore">
+                            <ion-icon name="ellipsis-vertical"></ion-icon>
+                        </div>
+                        {
+                            isEditAccountOpen?
+                            <div className="accountSettings">
+                                <p>Ndrysho te dhenat</p>
+                                <p>Ndrysho fjalekalimin</p>
+                                <p>Ckycu</p>
+                            </div>
+                            :<div className="accountSettingsNone">
+                                <p>Ndrysho te dhenat</p>
+                                <p>Ndrysho fjalekalimin</p>
+                                <p>Ckycu</p>
+                            </div>
+                        }
                     </div>
                     <div className="userOrderHistory">
                         <div className="orderHistoryCard">
