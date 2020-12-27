@@ -17,6 +17,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    z-index: 0;
+    height: 120px;
+    position: relative;
 }
 .userDetails img{
     width: 100px;
@@ -51,11 +54,11 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    position: relative;
+    position: absolute;
     padding: 0 10px;
     z-index: 3;
     top: 80px;
-    left: -30px;
+    left: 70px;
     animation-name: example;
     animation-duration: .3s;
 
@@ -65,8 +68,8 @@
     to {top: 80px;}
   }
 @keyframes exampleMobile {
-from {top: -30px}
-to {top: -20px;}
+from {top: 60px}
+to {top: 70px;}
 }
 .accountSettingsNone{
     display: none;
@@ -141,8 +144,8 @@ to {top: -20px;}
         align-items: center;
     }
     .accountSettings{
-        top: -20px;
-        left: 50px;
+        top: 70px;
+        left: 150px;
         animation-name: exampleMobile;
         animation-duration: .3s;
     }
@@ -162,5 +165,6 @@ to {top: -20px;}
     .userDetails{ 
         width: 100vw;
         justify-content: space-evenly;
+        height: auto;
     }
 }
