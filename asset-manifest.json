@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/lexoj.al/static/css/main.28dc982f.chunk.css",
-    "main.js": "/lexoj.al/static/js/main.4f9f64b4.chunk.js",
-    "main.js.map": "/lexoj.al/static/js/main.4f9f64b4.chunk.js.map",
+    "main.css": "/lexoj.al/static/css/main.c9182065.chunk.css",
+    "main.js": "/lexoj.al/static/js/main.37ce00f8.chunk.js",
+    "main.js.map": "/lexoj.al/static/js/main.37ce00f8.chunk.js.map",
     "runtime-main.js": "/lexoj.al/static/js/runtime-main.9d04407a.js",
     "runtime-main.js.map": "/lexoj.al/static/js/runtime-main.9d04407a.js.map",
-    "static/js/2.eeac6e1d.chunk.js": "/lexoj.al/static/js/2.eeac6e1d.chunk.js",
-    "static/js/2.eeac6e1d.chunk.js.map": "/lexoj.al/static/js/2.eeac6e1d.chunk.js.map",
+    "static/js/2.ee3f6e21.chunk.js": "/lexoj.al/static/js/2.ee3f6e21.chunk.js",
+    "static/js/2.ee3f6e21.chunk.js.map": "/lexoj.al/static/js/2.ee3f6e21.chunk.js.map",
     "index.html": "/lexoj.al/index.html",
-    "precache-manifest.cba0bf20564e8a56b296d211e04b91a2.js": "/lexoj.al/precache-manifest.cba0bf20564e8a56b296d211e04b91a2.js",
+    "precache-manifest.a254312f64638b35827b01b56a57db80.js": "/lexoj.al/precache-manifest.a254312f64638b35827b01b56a57db80.js",
     "service-worker.js": "/lexoj.al/service-worker.js",
-    "static/css/main.28dc982f.chunk.css.map": "/lexoj.al/static/css/main.28dc982f.chunk.css.map",
-    "static/js/2.eeac6e1d.chunk.js.LICENSE.txt": "/lexoj.al/static/js/2.eeac6e1d.chunk.js.LICENSE.txt",
-    "static/media/home.css": "/lexoj.al/static/media/background.25c0e539.webp",
+    "static/css/main.c9182065.chunk.css.map": "/lexoj.al/static/css/main.c9182065.chunk.css.map",
+    "static/js/2.ee3f6e21.chunk.js.LICENSE.txt": "/lexoj.al/static/js/2.ee3f6e21.chunk.js.LICENSE.txt",
+    "static/media/home.css": "/lexoj.al/static/media/background.daff393e.jpg",
     "static/media/baner.png": "/lexoj.al/static/media/baner.e2e08f80.png",
     "static/media/lexojlogo.png": "/lexoj.al/static/media/lexojlogo.5052d102.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9d04407a.js",
-    "static/js/2.eeac6e1d.chunk.js",
-    "static/css/main.28dc982f.chunk.css",
-    "static/js/main.4f9f64b4.chunk.js"
+    "static/js/2.ee3f6e21.chunk.js",
+    "static/css/main.c9182065.chunk.css",
+    "static/js/main.37ce00f8.chunk.js"
   ]
 }
