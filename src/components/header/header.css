@@ -71,11 +71,12 @@
 }
 @media screen and (max-width: 600px){
     .header-bar{
-        position: static;
+        position: relative;
         width: 100vw;
         padding: 0;
         background-color: black;
         justify-content: space-evenly;
+        z-index: 5;
     }
     .search-bar input{
         width: 100px;
