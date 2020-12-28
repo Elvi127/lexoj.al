@@ -13,7 +13,7 @@
     backdrop-filter: blur(5px) !important;
     z-index: 2;
 }
-.header-bar img{
+.header-bar .logo{
     width: 150px;
     height: 50px;
 }
