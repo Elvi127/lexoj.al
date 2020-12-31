@@ -9,7 +9,6 @@ import Menu from '../../components/menu/menu';
 const Home = props => {
     const [isMenuOpen, setMenuOpen] = useState(false)
     const books = useSelector(state => state.books.books);
-
     return(
         <div>
             <div className="home-banner">

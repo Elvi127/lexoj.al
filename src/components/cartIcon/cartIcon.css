@@ -16,3 +16,8 @@
     font-size: 40px;
     color: black;
 }
+@media screen and (max-width: 600px){
+    .cartIconContainer{
+        bottom: 20%;
+    }
+}
