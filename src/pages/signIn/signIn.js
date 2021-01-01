@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../components/header/lexojlogo.png';
+import Logo from '../../components/header/lexojlogo3.png';
 import './sign.css';
 
 const SignIn = props => {

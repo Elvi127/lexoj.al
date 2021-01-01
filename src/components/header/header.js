@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Logo from './lexojlogo.png';
+import Logo from './lexojlogo3.png';
 import './header.css';
 import {Link} from 'react-router-dom';
 import ProfileIcon from '../profileIcon/profileIcon';
