@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/lexoj.al/precache-manifest.fead652108ca0252f549f289517b70f0.js"
+  "/lexoj.al/precache-manifest.5755b3b3cbdfdb92b09f06f00a4c58f2.js"
 );
 
 self.addEventListener('message', (event) => {
