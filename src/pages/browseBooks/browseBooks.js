@@ -2,7 +2,19 @@ import React, {useState} from 'react';
 import {useSelector} from 'react-redux';
 import BookCard from '../../components/bookCard/bookCard';
 import Pagination from '../../components/pagination/pagination';
+import BrowseBooksMap from '../../components/browseBooksMap/browseBooksMap';
 import './browseBooks.css';
+
+const nodes = [
+    {
+        key: 'Kategoria',
+        value: 'Roman'
+    },
+    {
+        key: 'Autori',
+        value: 'Honoré de Balzac'
+    }
+]
 
 const BrowseBooks = props => {
     const [categoriesOpen, openCategories] = useState(false);
@@ -20,6 +32,7 @@ const BrowseBooks = props => {
     ]
     return(
         <div className="browse-screen">
+            <BrowseBooksMap nodes={nodes} />
             <div className="categories-triggers">
                 <p onClick={()=>openCategories(false)}>Te gjithe</p>
                 <p onClick={()=>openCategories(true)}>Kategorite</p>

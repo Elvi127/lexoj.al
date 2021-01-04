@@ -1,0 +1,12 @@
+.linearMap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    color: gray;
+    font-size: 16px;
+    padding-left: 20px;
+}
+.linearMap p{
+    margin-left: 15px;
+}
