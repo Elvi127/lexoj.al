@@ -30,6 +30,8 @@
     padding: 0 10px;
     font-size: 18px;
     letter-spacing: 1px;
+    animation-name: resultWeb;
+    animation-duration: .4s;
 }
 .booksResultsContainer{
     display: flex;
@@ -45,6 +47,10 @@
 @keyframes resultMobile{
     from {width: 0%}
     to {width: 80%;}
+}
+@keyframes resultWeb{
+    from {width: 0%}
+    to {width: 50%;}
 }
 .bookResultContainer{
     margin-top: 10px;
