@@ -2,13 +2,29 @@ import React, {useState} from 'react';
 import {useSelector} from 'react-redux';
 import {Link} from 'react-router-dom';
 import './home.css';
-import BookCard from '../../components/bookCard/bookCard';
-import Baner from './baner.png';
 import Menu from '../../components/menu/menu';
+import HomeSection from '../../components/homeSections/homeSection';
+import Baner from './baner.png';
 
 const Home = props => {
     const [isMenuOpen, setMenuOpen] = useState(false)
     const books = useSelector(state => state.books.books);
+    const sections = [
+        {
+            direction: 'col',
+            title: 'Librat e fundit',
+            subtitle: 'Lexo librat e sapo shtuar',
+            contentType: 'carousel',
+            content: books
+        },
+        {
+            direction: 'row',
+            title: 'Lexo Kudo',
+            subtitle: 'Lexo nga kompjuteri, tableti ose celulari juaj',
+            contentType: 'image',
+            content: Baner
+        },
+    ]
     return(
         <div>
             <div className="home-banner">
@@ -22,29 +38,13 @@ const Home = props => {
                 </Link>
             </div>
             <div>
-               <div className="books-section">
-                   <p className="section-h">Librat e fundit</p>
-                   <p className="section-p">Lexo librat e sapo shtuar</p>
-                   <div className="books-container-home">
-                        {
-                            books.map((book, i)=>{
-                                return <BookCard 
-                                        title={book.title}
-                                        author={book.author}
-                                        views={book.views}
-                                        img={book.img}
-                                    />
-                            })
-                        }
-                   </div>
-                   <div className="books-section section2">
-                       <div>
-                            <p className="section-h">Lexo Kudo</p>
-                            <p className="section-p">Lexo nga kompjuteri, tableti ose celulari juaj.</p>
-                       </div>
-                       <img alt="banner" src={Baner} />
-                   </div>
-               </div>
+                {
+                    sections.map(section => 
+                        <HomeSection 
+                            section={section}
+                        />
+                    )
+                }
             </div>
         </div>
     )
