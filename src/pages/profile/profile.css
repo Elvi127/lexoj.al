@@ -21,10 +21,16 @@
     height: 120px;
     position: relative;
 }
-.userDetails img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
+.userDetails .profileIcon{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: rgb(80, 80, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
 }
 .userDetails p{
     font-size: 20px;

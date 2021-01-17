@@ -18,7 +18,7 @@ const Profile = props => {
             <div className="accountLeft">
                 <div className="accountInfo">
                     <div className="userDetails">
-                        <img alt="userimage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLCbQsmw9KpoBCi4Yabq8oau1Ksx3U8rmJBA&usqp=CAU"/>
+                        <span className="profileIcon">EM</span>
                         <p>Elvi Miraka</p>
                         <div onClick={toggleEditAccount} className="userMore">
                             <ion-icon name="ellipsis-vertical"></ion-icon>
