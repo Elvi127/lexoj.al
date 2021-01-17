@@ -3,6 +3,7 @@ import { useLocation, Link } from 'react-router-dom';
 
 import './cartIcon.css';
 
+
 const CartIcon = props => {
     const location = useLocation();
     if(location.pathname.includes('hyr') || location.pathname.includes('regjistrohu') || location.pathname.includes("shporte") || location.pathname.includes("llogaria"))

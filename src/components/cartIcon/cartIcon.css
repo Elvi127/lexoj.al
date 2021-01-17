@@ -1,23 +1,27 @@
 .cartIconContainer{
     position: fixed;
     z-index: 2;
-    bottom: 10%;
+    bottom: 30px;
     right: 10%;
     background-color: #009ec9;
-    border-radius: 60px;
-    padding: 10px;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
     box-shadow: 2px 2px 15px #009ec9;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .cartIconContainer:hover{
-    padding: 12px;
+    padding: 2px;
 }
 .cartIconContainer ion-icon{
     font-size: 40px;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 @media screen and (max-width: 600px){
     .cartIconContainer{
-        bottom: 20%;
+        bottom: 50px;
     }
 }
