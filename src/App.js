@@ -17,13 +17,16 @@ import Header from './components/header/header';
 import CartIcon from './components/cartIcon/cartIcon';
 import booksReducer from './store/reducer/books';
 import cartReducer from './store/reducer/cart';
+import notificationReducer from './store/reducer/notification';
 import Cart from './pages/cart/cart';
 import Profile from './pages/profile/profile';
 import Footer from './components/footer/footer';
+import Notification from './components/notification/notification';
 
 const rootReducer = combineReducers({
   books: booksReducer,
-  cartItems: cartReducer
+  cartItems: cartReducer,
+  notification: notificationReducer,
 })
 
 const store = createStore(rootReducer);
@@ -36,6 +39,7 @@ const App = props => {
       <Router>
         <Header/>
         <CartIcon/>
+        <Notification />
         <Switch>
           <Route path="/" exact component={Home}/>
           <Route path="/lexoj.al" exact component={Home}/>

@@ -2,6 +2,7 @@ import React from 'react';
 import {useParams} from 'react-router-dom';
 import {useSelector, useDispatch} from 'react-redux';
 import * as cartActions from '../../store/actions/cart';
+import * as notificationActions from '../../store/actions/notification';
 import './bookPage.css';
 
 const BookPage = props => {
@@ -15,7 +16,13 @@ const BookPage = props => {
             <div className="book-info">
                 <div className="book-cover">
                     <img alt="book" src={book.img} />
-                    <p onClick={()=>dispatch(cartActions.addToCart(book))}>Shto ne shporte</p>
+                    <p 
+                        onClick={()=>{
+                            dispatch(cartActions.addToCart(book)); 
+                            dispatch(notificationActions.displayNotification({message: `${book.title} u shtua ne shporte`, priority: 'white'}))}}
+                    >
+                        Shto ne shporte
+                    </p>
                 </div>
                 <div className="book-details">
                     <p className="book-title">{book.title}</p>
