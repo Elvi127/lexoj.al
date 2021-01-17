@@ -7,6 +7,8 @@ import BookCard from '../../components/bookCard/bookCard';
 const Profile = props => {
     const books = useSelector(state => state.books.books);
     const [isEditAccountOpen, setEditAccountOpen] = useState(false);
+    const [isChangePasswordOpen, setChangePasswordOpen] = useState(false);
+    const [isChangeDataOpen, setChangeDataOpen] = useState(false);
     const toggleEditAccount = () =>{
         if(isEditAccountOpen) setEditAccountOpen(false)
         else setEditAccountOpen(true)
@@ -24,8 +26,8 @@ const Profile = props => {
                         {
                             isEditAccountOpen?
                             <div className="accountSettings">
-                                <p>Ndrysho te dhenat</p>
-                                <p>Ndrysho fjalekalimin</p>
+                                <p onClick={()=>{setChangeDataOpen(true); setEditAccountOpen(false)}}>Ndrysho te dhenat</p>
+                                <p onClick={()=>{setChangePasswordOpen(true); setEditAccountOpen(false)}}>Ndrysho fjalekalimin</p>
                                 <p>Ckycu</p>
                             </div>
                             :<div className="accountSettingsNone">
@@ -47,6 +49,54 @@ const Profile = props => {
                     </div>
                 </div>
                 <div className="booksSection">
+                    {
+                        isChangePasswordOpen?
+                        <div className="section">
+                            <div className="passwordChangeField">
+                                <label>Fjalekalimi aktual</label>
+                                <input type="password" />
+                            </div>
+                            <div className="passwordChangeField">
+                                <label>Fjalekalimi i ri</label>
+                                <input type="password" />
+                            </div>
+                            <div className="passwordChangeField">
+                                <label>Konfirmoni fjalekalimin</label>
+                                <input type="password" />
+                            </div>
+                            <div className="Actions">
+                                <p onClick={()=>setChangePasswordOpen(false)} className="cancel">Anullo</p>
+                                <p className="save">Ruaj</p>
+                            </div>
+                        </div>
+                        :null
+                    }
+                    {
+                        isChangeDataOpen?
+                        <div className="section">
+                            <div className="passwordChangeField">
+                                <label>Username</label>
+                                <input type="text" />
+                            </div>
+                            <div className="passwordChangeField">
+                                <label>Email</label>
+                                <input type="text" />
+                            </div>
+                            <div className="passwordChangeField">
+                                <label>Adresa</label>
+                                <input type="text" />
+                            </div>
+                            <div className="passwordChangeField">
+                                <label>Numri i telefonit</label>
+                                <input type="text" />
+                            </div>
+                            <div className="Actions">
+                                <p onClick={()=>setChangeDataOpen(false)} className="cancel">Anullo</p>
+                                <p className="save">Ruaj</p>
+                            </div>
+                        </div>
+                        :null
+                    }
                     <div className="section">
                         <p className="p">Te ruajtur</p>
                         <div className="booksSectionScroll">
