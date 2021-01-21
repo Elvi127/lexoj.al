@@ -9,9 +9,16 @@ const Notification = props => {
 
     if(notification.active){
         return(
-            <div className="notificationContainer">
-                <ion-icon onClick={()=>dispatch(notificationActions.removeNotification())} name="close"></ion-icon>
-                <p className="notificationMessage">{notification.message}</p>
+            <div>
+                <div className="notificationContainer">
+                    <ion-icon onClick={()=>dispatch(notificationActions.removeNotification())} name="close"></ion-icon>
+                    <p className="notificationMessage">{notification.message}</p>
+                </div>
+                <div style={{height: 0}}>
+                {
+                    setTimeout(()=>dispatch(notificationActions.removeNotification()), 3000)
+                }
+                </div>
             </div>
         )
     }else return null;
