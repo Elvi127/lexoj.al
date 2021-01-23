@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import * as cartActions from '../../store/actions/cart';
 import './cart.css';
@@ -37,28 +37,69 @@ const CartItem = props => {
 
 
 const Cart = props => {
+    const [isCheckoutOpen, setCheckoutOpen] = useState(false);
     const books = useSelector(state => state.cartItems.cartItems);
     let totalAmount = 0;
     books.map(book => totalAmount += book.quantity * 500);
     console.log(books)
     return(
-        <div className="cartPage">
-            <div className="cartItems">
+        <div>
+            <div className="cartPage">
+                <div className="cartItems">
+                {
+                    books.map(book => 
+                        <CartItem
+                            img={book.img} 
+                            title={book.title}
+                            quantity={book.quantity}
+                            id={book.id}
+                        />
+                    )
+                }
+                </div>
+                <div className="checkoutContainer">
+                    <p className="checkoutAmount">Shuma totale: {totalAmount} AL</p>
+                    <p onClick={()=>setCheckoutOpen(true)} className="checkoutAction">Vazhdo me porosine</p>
+                </div>
+            </div>
             {
-                books.map(book => 
-                    <CartItem
-                        img={book.img} 
-                        title={book.title}
-                        quantity={book.quantity}
-                        id={book.id}
-                    />
-                )
+                isCheckoutOpen?
+                <div className="checkoutFormContainer">
+                    <p className="info">*Ju nuk jeni i kycur! Ju lutem plotesoni format e meposhtme per te kryer porosine ose nese keni nje llogari ne lexoj.al kycuni <span>ketu</span></p>
+                    <div className="checkoutDetailsContainer">
+                        <div className="orderDetail">
+                            <label>Emri</label>
+                            <input type="text"/>
+                        </div>
+                        <div className="orderDetail">
+                            <label>Mbiemri</label>
+                            <input type="text"/>
+                        </div>
+                        <div className="orderDetail">
+                            <label>Qyteti</label>
+                            <input type="text"/>
+                        </div>
+                        <div className="orderDetail">
+                            <label>Adresa</label>
+                            <input type="text"/>
+                        </div>
+                        <div className="orderDetail">
+                            <label>Email</label>
+                            <input type="text"/>
+                        </div>
+                        <div className="orderDetail">
+                            <label>Nr Cel</label>
+                            <input type="text"/>
+                        </div>
+                    </div>
+                    <fieldset>
+                        <legend>Informacion Shtese</legend>
+                        <textarea></textarea>
+                    </fieldset>
+                    <p className="orderAction">Perfundo Porosine</p>
+                </div>
+                :null
             }
-            </div>
-            <div className="checkoutContainer">
-                <p className="checkoutAmount">Shuma totale: {totalAmount} AL</p>
-                <p className="checkoutAction">Vazhdo me porosine</p>
-            </div>
         </div>
     )
 }

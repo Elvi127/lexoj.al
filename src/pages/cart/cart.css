@@ -68,6 +68,7 @@
     color: white;
     margin-top: 20px;
     margin-bottom: 20px;
+    border-radius: 5px;
 }
 .checkoutAmount{
     font-size: 20px;
@@ -87,7 +88,104 @@
     background-color: white;
     color: #0F1111;
 }
+.checkoutFormContainer{
+    color: grey;
+}
+.checkoutFormContainer .info{
+    margin: 20px;
+}
+.checkoutFormContainer span{
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(0, 140, 255);
+}
+.checkoutDetailsContainer{
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    padding: 0 20px;
+}
+.orderDetail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    margin: 10px 0;
+}
+.orderDetail label{
+    color: white;
+    font-size: 18px;
+}
+.orderDetail input{
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    width: 300px;
+}
+.checkoutFormContainer fieldset{
+    width: calc(50% - 40px);
+    border: 1px solid grey;
+    height: 100px;
+    margin: 20px 20px;
+    border-radius: 5px;
+    color: white;
+}
+.checkoutFormContainer textarea{
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 16px;
+}
+.checkoutFormContainer .orderAction{
+    background-color: #0097fc;
+    width: 200px;
+    font-size: 20px;
+    padding: 7px 0;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px;
+    cursor: pointer;
+}
+.checkoutFormContainer .orderAction:hover{
+    background-color: #005ce6;
+}
+
+@media screen and (max-width: 1080px){
+    .orderDetail{
+        width: 350px;
+    }
+    .orderDetail input{
+        width: 200px;
+    }
+}
+
 @media screen and (max-width: 800px){
+    .orderDetail{
+        width: 500px;
+    }
+    .checkoutFormContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .checkoutFormContainer fieldset{
+        width: 500px;
+    }
+    .checkoutDetailsContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .cartPage{
         flex-direction: column;
         align-items: center;
@@ -108,9 +206,22 @@
     }
 }
 @media screen and (max-width: 600px){
+    .checkoutContainer{
+        width: 80%;
+    }
     .cartItemDelete{
         width: 100%;
         text-align: center;
         margin-bottom: 20px;
     }
+    .orderDetail{
+        width: 300px;
+    }
+    .checkoutFormContainer fieldset{
+        width: 300px;
+    }
+    .cartPage{
+        padding: 0;
+    }
+
 }
