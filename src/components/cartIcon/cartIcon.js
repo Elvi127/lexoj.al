@@ -6,7 +6,7 @@ import './cartIcon.css';
 
 const CartIcon = props => {
     const location = useLocation();
-    if(location.pathname.includes('hyr') || location.pathname.includes('regjistrohu') || location.pathname.includes("shporte") || location.pathname.includes("llogaria"))
+    if(location.pathname.includes('hyr') || location.pathname.includes('regjistrohu') || location.pathname.includes("shporte") || location.pathname.includes("llogaria") || location.pathname.includes("kontakt"))
      return null;
     else return(
         <Link to='/shporte' style={{ textDecoration: 'none' }}>

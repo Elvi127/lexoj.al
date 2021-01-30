@@ -5,7 +5,7 @@ import './footer.css';
 const directs = [
     {
         name: "Na Kontaktoni",
-        to: "/kontakte"
+        to: "/kontakt"
     },
     {
         name: "Rreth Nesh",

@@ -22,6 +22,7 @@ import Cart from './pages/cart/cart';
 import Profile from './pages/profile/profile';
 import Footer from './components/footer/footer';
 import Notification from './components/notification/notification';
+import ContactUs from './pages/contactUs/contactUs';
 
 const rootReducer = combineReducers({
   books: booksReducer,
@@ -49,6 +50,7 @@ const App = props => {
           <Route path ="/regjistrohu" exact component={SignUp}/>
           <Route path="/shporte" exact component={Cart}/>
           <Route path="/llogaria" exact component={Profile}/>
+          <Route path="/kontakt" exact component={ContactUs}/>
         </Switch>
         <Footer />
       </Router>
