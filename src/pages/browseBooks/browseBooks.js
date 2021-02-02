@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
-import {useSelector} from 'react-redux';
+import React, {useState, useEffect} from 'react';
 import BookCard from '../../components/bookCard/bookCard';
 import Pagination from '../../components/pagination/pagination';
 import BrowseBooksMap from '../../components/browseBooksMap/browseBooksMap';
+import URL from '../../components/url';
 import './browseBooks.css';
 
 const nodes = [
@@ -19,7 +19,8 @@ const nodes = [
 const BrowseBooks = props => {
     const [categoriesOpen, openCategories] = useState(false);
     const [page, setPage] = useState(1);
-    const books = useSelector(state => state.books.books);
+    const [books, setBooks] = useState([]);
+    const [route, setRoute] = useState('/browse');
     const categories = [
         'Roman',
         'Perralle',
@@ -30,6 +31,17 @@ const BrowseBooks = props => {
         'Shkencor',
         'Biografi',
     ]
+
+    useEffect(()=>{
+        fetch(`${URL}${route}`, {
+            method: 'get',
+            headers: {'Content-Type': 'application/json'},
+        }).then(response => response.json()).then(data =>{
+            console.log(data)
+           setBooks(data.data.books);
+        });
+    }, [route])
+
     return(
         <div className="browse-screen">
             <BrowseBooksMap nodes={nodes} />
@@ -54,8 +66,8 @@ const BrowseBooks = props => {
                         return <BookCard 
                             title={book.title}
                             author={book.author}
-                            views={book.views}
-                            img={book.img}
+                            views={500}
+                            img={book.imgcover}
                         />
                     })
                 }
