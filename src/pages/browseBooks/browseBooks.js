@@ -16,11 +16,27 @@ const nodes = [
     }
 ]
 
+const LazyBookCard = props => {
+    return(
+        <div className="bookCardHolder">
+            <div className="imgHolder"></div>
+            <div className="detailsHolder">
+                <div className="titleHolder"></div>
+                <div className="subdetailsHolder">
+                    <div className="authorHolder"></div>
+                    <div className="soldHolder"></div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
 const BrowseBooks = props => {
     const [categoriesOpen, openCategories] = useState(false);
     const [page, setPage] = useState(1);
     const [books, setBooks] = useState([]);
     const [route, setRoute] = useState('/browse');
+    const array = [0,0,0,0,0,0,0,0,0,0]
     const categories = [
         'Roman',
         'Perralle',
@@ -60,6 +76,13 @@ const BrowseBooks = props => {
                 </div>
                 :null
             }
+            <div className="books-container">
+                {
+                    books.length > 0?
+                    null
+                    :array.map(a => <LazyBookCard />)
+                }
+            </div>
             <div className="books-container">
                 {
                     books.map((book, i)=>{
