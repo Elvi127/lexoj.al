@@ -76,7 +76,7 @@ const BrowseBooks = props => {
                 </div>
                 :null
             }
-            <div className="books-container">
+            <div>
                 {
                     books.length > 0?
                     <div className="books-container">
@@ -92,7 +92,11 @@ const BrowseBooks = props => {
                             })
                         }
                     </div>
-                    :array.map(a => <LazyBookCard />)
+                    :<div className="books-container">
+                        {
+                            array.map(a => <LazyBookCard />)
+                        }
+                    </div>
                 }
             </div>
             <Pagination page={page} onPress={setPage} />
