@@ -79,20 +79,20 @@ const BrowseBooks = props => {
             <div className="books-container">
                 {
                     books.length > 0?
-                    null
+                    <div className="books-container">
+                        {
+                            books.map((book, i)=>{
+                                return <BookCard 
+                                    title={book.title}
+                                    author={book.author}
+                                    views={500}
+                                    img={book.imgcover}
+                                    id={book._id}
+                                />
+                            })
+                        }
+                    </div>
                     :array.map(a => <LazyBookCard />)
-                }
-            </div>
-            <div className="books-container">
-                {
-                    books.map((book, i)=>{
-                        return <BookCard 
-                            title={book.title}
-                            author={book.author}
-                            views={500}
-                            img={book.imgcover}
-                        />
-                    })
                 }
             </div>
             <Pagination page={page} onPress={setPage} />
