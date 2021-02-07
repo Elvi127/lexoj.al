@@ -1,10 +1,14 @@
 import React, {useState} from 'react';
 import './profile.css';
-import {useSelector} from 'react-redux';
+import {useSelector, useDispatch} from 'react-redux';
+import { useHistory } from 'react-router-dom';
 import BookCard from '../../components/bookCard/bookCard';
+import * as userActions from '../../store/actions/user';
 
 
 const Profile = props => {
+    const dispatch = useDispatch();
+    const history = useHistory();
     const books = useSelector(state => state.books.books);
     const [isEditAccountOpen, setEditAccountOpen] = useState(false);
     const [isChangePasswordOpen, setChangePasswordOpen] = useState(false);
@@ -28,7 +32,7 @@ const Profile = props => {
                             <div className="accountSettings">
                                 <p onClick={()=>{setChangeDataOpen(true); setEditAccountOpen(false)}}>Ndrysho te dhenat</p>
                                 <p onClick={()=>{setChangePasswordOpen(true); setEditAccountOpen(false)}}>Ndrysho fjalekalimin</p>
-                                <p>Ckycu</p>
+                                <p onClick={()=>{dispatch(userActions.logoutUser()); history.push('/');}}>Ckycu</p>
                             </div>
                             :<div className="accountSettingsNone">
                                 <p>Ndrysho te dhenat</p>

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {useSelector} from 'react-redux';
 import Logo from './lexojlogo3.png';
 import './header.css';
 import {Link} from 'react-router-dom';
@@ -7,7 +8,9 @@ import SearchComponent from '../searchComponent/searchComponent';
 
 
 const Header = props =>{
-    const isLoged = true;
+    const user = useSelector(state => state.user.logedUser);
+    let isLoged = undefined;
+    if(user) isLoged = true;
     const [isSearchOpen, setSearchOpen] = useState(false);
     return(
         <div className="header-bar">

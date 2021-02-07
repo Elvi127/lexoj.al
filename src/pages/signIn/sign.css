@@ -72,4 +72,10 @@ input::placeholder{
     .sign-screen{
         padding-top: 0;
     }
+    .sign-card{
+        width: 90%;
+    }
+    .sign-card input{
+        width: 75%;
+    }
 }

@@ -18,6 +18,7 @@ import CartIcon from './components/cartIcon/cartIcon';
 import booksReducer from './store/reducer/books';
 import cartReducer from './store/reducer/cart';
 import notificationReducer from './store/reducer/notification';
+import userReducer from './store/reducer/user';
 import Cart from './pages/cart/cart';
 import Profile from './pages/profile/profile';
 import Footer from './components/footer/footer';
@@ -28,6 +29,7 @@ const rootReducer = combineReducers({
   books: booksReducer,
   cartItems: cartReducer,
   notification: notificationReducer,
+  user: userReducer,
 })
 
 const store = createStore(rootReducer);
