@@ -12,7 +12,7 @@ const Menu = props => {
         ?<div className="menuContainer">
             <ion-icon onClick={props.closeMenu} name="close"></ion-icon>
             {
-                logedUser
+                isLoged
                 ?<div className="menuLogBar">
                     <img alt="user" src="https://i.pinimg.com/736x/5f/40/6a/5f406ab25e8942cbe0da6485afd26b71.jpg"/>
                     <span>Elvi Miraka</span>
