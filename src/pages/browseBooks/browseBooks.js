@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { useHistory, useLocation} from 'react-router-dom';
 import BookCard from '../../components/bookCard/bookCard';
 import Pagination from '../../components/pagination/pagination';
 import BrowseBooksMap from '../../components/browseBooksMap/browseBooksMap';
@@ -48,8 +49,10 @@ const BrowseBooks = props => {
         'Biografi',
     ]
 
+    const history = useHistory();
+    let location = useLocation();
     useEffect(()=>{
-        fetch(`${URL}${route}`, {
+        fetch(`${URL}/browse${location.search}`, {
             method: 'get',
             headers: {'Content-Type': 'application/json'},
         }).then(response => response.json()).then(data =>{
@@ -62,7 +65,7 @@ const BrowseBooks = props => {
         <div className="browse-screen">
             <BrowseBooksMap nodes={nodes} />
             <div className="categories-triggers">
-                <p onClick={()=>openCategories(false)}>Te gjithe</p>
+                <p onClick={()=>{openCategories(false);history.push(`/shfleto`); setRoute(new Date())}}>Te gjithe</p>
                 <p onClick={()=>openCategories(true)}>Kategorite</p>
             </div>
             {
@@ -70,7 +73,7 @@ const BrowseBooks = props => {
                 <div className="categories-container">
                     {
                         categories.map((category, i)=>{
-                            return <p className="category">{category}</p>
+                            return <p onClick={()=> {history.push(`/shfleto?category=${category}`); setRoute(new Date())}} className="category">{category}</p>
                         })
                     }
                 </div>
