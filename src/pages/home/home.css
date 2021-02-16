@@ -43,6 +43,7 @@
 
 @media screen and (max-width: 600px) {
     .home-banner{
+        background-position: center;
         justify-content: space-around;
     }
 }
