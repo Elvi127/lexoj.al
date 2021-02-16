@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0610f6788ed13c8e843aadf5b28c3504",
+    "revision": "3d7fc890c9e44550c6134527903517bf",
     "url": "/lexoj.al/index.html"
   },
   {
-    "revision": "04813ea48f9160d895fa",
+    "revision": "4b314ff007e433684183",
     "url": "/lexoj.al/static/css/main.7caecb84.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lexoj.al/static/js/2.4485f52d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "04813ea48f9160d895fa",
-    "url": "/lexoj.al/static/js/main.bc6af087.chunk.js"
+    "revision": "4b314ff007e433684183",
+    "url": "/lexoj.al/static/js/main.d9f480c6.chunk.js"
   },
   {
     "revision": "76d73fb6d14801676403",
