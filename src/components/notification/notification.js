@@ -14,7 +14,7 @@ const Notification = props => {
                     <ion-icon onClick={()=>dispatch(notificationActions.removeNotification())} name="close"></ion-icon>
                     <p className="notificationMessage">{notification.message}</p>
                 </div>
-                <div style={{height: 0}}>
+                <div style={{height: 0, display: 'none'}}>
                 {
                     setTimeout(()=>dispatch(notificationActions.removeNotification()), 3000)
                 }
