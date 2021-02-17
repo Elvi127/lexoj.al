@@ -65,7 +65,7 @@ const BrowseBooks = props => {
         <div className="browse-screen">
             <BrowseBooksMap nodes={nodes} />
             <div className="categories-triggers">
-                <p onClick={()=>{openCategories(false);history.push(`/shfleto`); setRoute(new Date())}}>Te gjithe</p>
+                <p onClick={()=>{openCategories(false);history.push(`/shfleto`); setRoute(new Date());setBooks([])}}>Te gjithe</p>
                 <p onClick={()=>openCategories(true)}>Kategorite</p>
             </div>
             {
@@ -73,7 +73,7 @@ const BrowseBooks = props => {
                 <div className="categories-container">
                     {
                         categories.map((category, i)=>{
-                            return <p onClick={()=> {history.push(`/shfleto?category=${category}`); setRoute(new Date())}} className="category">{category}</p>
+                            return <p onClick={()=> {history.push(`/shfleto?category=${category}`); setRoute(new Date());setBooks([])}} className="category">{category}</p>
                         })
                     }
                 </div>
