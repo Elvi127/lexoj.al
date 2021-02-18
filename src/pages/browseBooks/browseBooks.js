@@ -78,7 +78,11 @@ const BrowseBooks = props => {
            setBooks(data.data.books);
         });
     }, [route])
-
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
     return(
         <div className="browse-screen">
             <BrowseBooksMap nodes={nodes} />
