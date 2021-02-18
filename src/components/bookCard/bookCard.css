@@ -44,6 +44,8 @@
 }
 .card-author{
     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     margin: 0;
     width: 70%;
     height: 100%;

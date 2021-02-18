@@ -51,6 +51,24 @@ const BrowseBooks = props => {
 
     const history = useHistory();
     let location = useLocation();
+    const changePageUrl = (page)=> {
+        if(location.search.includes("category=")){
+            let url = location.search;
+            let url_category = url.split('&')[0];
+            url = url_category + `&page=${page}`
+            history.push(`/shfleto${url}`); 
+            setRoute(new Date());
+            setBooks([])
+
+        }else{
+            let url = location.search;
+            let url_category = url.split('?')[0];
+            url = url_category + `page=${page}`
+            history.push(`/shfleto?${url}`); 
+            setRoute(new Date());
+            setBooks([])
+        }
+    }
     useEffect(()=>{
         fetch(`${URL}/browse${location.search}`, {
             method: 'get',
@@ -65,7 +83,7 @@ const BrowseBooks = props => {
         <div className="browse-screen">
             <BrowseBooksMap nodes={nodes} />
             <div className="categories-triggers">
-                <p onClick={()=>{openCategories(false);history.push(`/shfleto`); setRoute(new Date());setBooks([])}}>Te gjithe</p>
+                <p onClick={()=>{openCategories(false);history.push(`/shfleto`); setRoute(new Date());setBooks([]);setPage(1)}}>Te gjithe</p>
                 <p onClick={()=>openCategories(true)}>Kategorite</p>
             </div>
             {
@@ -73,7 +91,7 @@ const BrowseBooks = props => {
                 <div className="categories-container">
                     {
                         categories.map((category, i)=>{
-                            return <p onClick={()=> {history.push(`/shfleto?category=${category}`); setRoute(new Date());setBooks([])}} className="category">{category}</p>
+                            return <p onClick={()=> {history.push(`/shfleto?category=${category}`); setRoute(new Date());setBooks([]);setPage(1)}} className="category">{category}</p>
                         })
                     }
                 </div>
@@ -102,7 +120,7 @@ const BrowseBooks = props => {
                     </div>
                 }
             </div>
-            <Pagination page={page} onPress={setPage} />
+            <Pagination page={page} onPageChange={changePageUrl} lastPage={books.length>0 && books.length<4} onPress={setPage} />
         </div>
     )
 }
